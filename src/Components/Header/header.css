@@ -1,0 +1,269 @@
+/*-------top signin header-------*/
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+#headerTop{
+    padding-top:10px;
+    padding-bottom: 35px;
+    background:#222;
+    display:block;
+    width: 100%;
+    position: relative;
+    font-size:15px;
+  }
+  #headerRight{
+    right:10px;
+    position:relative;
+    float: right;
+  }
+  /* #headerRight span{
+  color:white;
+  } */
+  .reg{
+    color:white;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    position: relative;
+  }
+  .mysearch{
+    color:white;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    position:relative;
+  }
+  .pipe{
+    color:white;
+  }
+  #headerRight > .reg:hover, #headerRight > .mysearch:hover{
+  color:orangered;
+  cursor: pointer;
+  }
+
+  .toggle-form{
+    display:hidden;
+  }
+  .search-box{
+    background:white;
+    padding:10px;
+    z-index: 999999999;
+    position: absolute;
+    top:35px;
+    right:5px;
+    min-width:312px;
+    display: none;
+  }
+  .input-search{
+    width:70% !important;
+    float:left !important;
+  }
+
+  /*--------Logo banner-----------------------*/
+  .logoContainer{
+    background-image:url("../../../public/Images/bg2.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    position: relative;
+    /* background: rgb(99, 50, 50); */
+  }
+  
+  
+  .logo a img{
+    padding: 20px;
+    width: clamp(312px,100%,600px);
+    height: 130px;
+    display: block;
+    margin: 0 auto; 
+  }
+
+  /*-----------------------Navbar----------------------------*/
+ 
+   
+.navbar .megamenu{ padding: 1rem; }
+.nav-item >a{
+  color:whitesmoke !important;
+}
+
+.navbar-nav>li{
+  width:133px !important;
+  text-align: center !important;
+}
+
+.navbar-nav >li{
+  border-right: 1px solid gray !important;;
+}
+.navbar-nav >li:last-child {
+  border-right: none !important;;
+}
+.navbar{
+  padding-top:0.2rem !important;;
+  padding-bottom: 0.2rem !important;;
+}
+
+.nav-item:hover,.nav-item.active{
+   cursor: pointer !important;
+  background: black;
+}
+
+.icon{
+  color:whitesmoke
+}
+.icon:hover{
+  color:mediumspringgreen
+} 
+/*-------code for highlight----------*/
+ .navbar-nav .nav-item {
+  position: relative !important;
+}
+.navbar-nav .nav-item ::before{
+  content: "";
+  position: absolute !important;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color:mediumspringgreen;;
+   transform: scale(0,1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.navbar-nav .nav-item :hover::before{
+  transform: scale(1,1);
+} 
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+  .navbar .has-megamenu{position:static!important;}
+  .navbar .megamenu{left:0; right:0; width:50%; margin-top:0;  }
+
+}	
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+    overflow-y: auto;
+      max-height: 90vh;
+      margin-top:10px;
+  }
+}
+
+/*=================register panel===============*/
+.myPanel{
+  z-index: 9999;
+  display: none;
+  position: absolute;
+  right: 3.3rem; 
+  top: calc(100% + 1.4rem);
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,1);
+  background-color: whitesmoke;
+}
+/*----------login panel-------------*/
+#loginPanel{
+  width:300px;
+  height:350px;
+  background-color: whitesmoke;
+  color:#222 !important;
+  font-family: 'Barlow Condensed', sans-serif; 
+  opacity:1;
+  transform:translateY(-10px);
+  transition: opacity 350ms ease-in-out,transform 350ms ease-in-out;
+}
+#RegisterPanel{
+  width:300px;
+  height:500px;
+  background-color: whitesmoke;
+  color:#222 !important;
+  font-family: 'Barlow Condensed', sans-serif; 
+  transform:translateY(-10px);
+  transition: opacity 350ms ease-in-out,transform 350ms ease-in-out;
+}
+/* .dropdownPanel{ */
+  /* position:absolute;
+  /* left: auto; */
+  /* left:0; */
+  /* display:none;
+  right: 3.3rem;
+  top: calc(100% + 1.4rem);
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,1);
+  z-index: 12;  */
+  /* opacity:1; */
+  /* transform:translateY(-10px);
+  transition: opacity 350ms ease-in-out,transform 350ms ease-in-out; */
+  /* text-align: left; */
+  /* visibility: visible; */
+  /* pointer-events: none; */
+/* } */
+
+#headerRight>.reg:focus-within + .dropdownPanel{
+  opacity: 1;
+  transform:translateY(0);
+  pointer-events: auto;
+}
+
+.PanelHeader{
+  border-bottom: 1.5px dashed darkgray;
+  padding-bottom: 5px;
+  color:#222
+}
+.PanelHeader .link{
+float:right;
+font-size: medium;
+}
+.PanelHeader .link:hover{
+  cursor: pointer;
+  color:orangered;
+  }
+  .PanelHeader .header{
+    font-size:x-large;
+    font-weight: bold;
+  }
+  .PanelBody> form>label{
+    display:block;
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+
+  .PanelBody> form>input{
+  width:95%;
+  height:35px;
+  outline:none;
+  margin:0 auto;
+  border:1px solid gray;
+  border-radius: 17.5px;
+  }
+  .PanelBody> form>button{
+    width:95%;
+    height:35px;
+    margin:0 auto;
+    color:white;
+    border: none;
+    background-color:var(--myorange);
+    border-radius: 17.5px;
+    margin-top:20px;
+    margin-bottom:20px;
+    }
+  
+    .Panelfooter{
+      color:#222;
+    }
+    .Panelfooter>label:hover{
+      color:orangered;
+    }
+    .PanelfooterRight:hover{
+    color:orangered
+    }
+    .PanelfooterRight{
+      float:right;
+    }

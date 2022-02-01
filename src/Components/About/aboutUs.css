@@ -1,0 +1,39 @@
+Body{
+    margin:0px;
+    padding:0px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+#quote{
+    font-size:xx-large;
+}
+.About-banner{
+    background:#f9f2ea;
+    color:#27221d;
+}
+.about-img{
+    width:90%;
+    height:600px;
+}
+.img-about-two{
+    width:90%;
+    height:600px;
+}
+.About-sec-banner{
+    background:#564e3e;
+    color:white;
+}
+.about-socials >a>i{
+    color:white;
+    padding:15px;
+    font-size:24px;
+}
+
+.about-socials >a>i:hover{
+    color:#2f0b33;
+}
+.color-white{
+    color:white;
+}

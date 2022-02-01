@@ -1,0 +1,20 @@
+Body{
+    margin:0px;
+    padding:0px;
+  }
+#my-container{
+    background: #bccbdc;
+        padding-left: 5%;
+}
+#my-banner{
+    background: #c9b7b7;
+}
+
+/*------------breadcrumb container----------*/
+.crumb-container{
+    background: #dacbcb;
+}
+
+.breadcrumb-item .disabled{
+    color:black;
+}

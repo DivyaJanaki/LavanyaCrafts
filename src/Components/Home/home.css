@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Festive&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Source+Serif+Pro&display=swap');
+
+/*-------------------About us--------------------*/
+#AboutUs_MainPage{
+    /* background-color: #383735; */
+    background-image: url("../../../public/Images/Aboutbg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    color: #fff;
+}
+/* .AboutUs-content .separator {
+    width: 20%;
+    height: 2.5px;
+    background-color: green;
+    margin: 20px;
+  } */
+  #AboutPara {
+    text-align: justify !important;
+  }
+  .AboutUs-content h1{
+    font-family:'Dancing Script', cursive;
+    font-weight: bold;
+    font-size:xxx-large;
+  }
+  .AboutUs-content h1 u{
+  text-underline-position: under;
+  text-decoration: underline;
+  text-decoration-color:green;
+  }
+  .carousel-item >img{
+    height:450px;
+    width:400px;
+
+}
+.mainReadMore{
+  border: 2px solid orangered;
+  color:whitesmoke;
+}
+.mainReadMore:hover{
+  background-color: var(--myorange);
+}
+
+/*----------banner 2-----------------*/
+
+#banner-two{
+    background:#b89e9f;
+    font-family: 'Source Serif Pro', serif;
+    color:rgb(62, 64, 45);
+  }
+  .banner-title{
+    font-size: 50px;
+    font-weight:700;
+    line-height:60px;
+    font-family: 'Source Serif Pro', serif;
+    color:rgb(62, 64, 45);
+  }
+  #banner-img{
+    height:300px;
+    width:350px;
+  }
+  .banner-text{
+    font-family: 'Barlow Condensed', sans-serif; 
+    font-weight:500;
+    font-size:20px;
+    line-height:30px;
+    text-align: justify;
+  }
+  /*---------------trending section-----------*/
+  #trend-section{
+    /* background:#ebf7ff; */
+    background:#e2e8f0;
+  }
+  .inline-block{
+    display: inline-block;
+  }
+  
+  .my-btn{
+    padding: 0.7rem 2rem;
+    border-radius: 0;
+  }
+  .separator{
+    height:15px;
+    width:100px;
+   border-top: 2px solid rgb(90, 68, 68);
+  }
+  .my-card{
+    border-radius: 0px;
+    max-width: 291px;
+    max-height: 480px;
+  }
+  
+  .my-card >img{
+    /* width: 277px; */
+    height:367px;
+    border-radius: 0px;
+    position: relative;
+  }
+  .card-body {
+    padding: 1rem 0rem;
+    background:#e2e8f0;
+  }
+  .wish{
+    position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
+    background: 0px;
+    border: none;
+  }
+  #view{
+    font-family:'Dancing Script', cursive;
+    position: absolute;
+    z-index: 2;
+    border: 2px solid white;
+    width:187px;
+    text-align: center;
+    height:34px;
+    border-radius: 16px;
+    bottom:15%;
+    right:5px;
+    background:rgb(141, 148, 92);
+    font-weight: 900;
+  }
