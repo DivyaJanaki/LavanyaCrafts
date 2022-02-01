@@ -1,0 +1,60 @@
+db.subCat.insert(
+
+[
+  {
+    "id":1,
+    "category": "Women",
+    "sub_id":1,
+    "sub_Cat": "saree"
+  },
+  {
+    "id":1,
+    "category": "Women",
+    "sub_id":2,
+    "sub_Cat": "bags"
+  },
+  {
+    "id":1,
+    "category": "Women",
+    "sub_id":3,
+    "sub_Cat": "wallets"
+  },
+  {
+    "id":1,
+    "category": "Women",
+    "sub_id":4,
+    "sub_Cat": "jewellery"
+  },
+  {
+    "id":3,
+    "category": "Home&Living",
+    "sub_id":5,
+    "sub_Cat": "cushioncovers"
+  },
+  {
+    "id":3,
+    "category": "Home&Living",
+    "sub_id":6,
+    "sub_Cat": "lamps"
+  },
+  {
+    "id":3,
+    "category": "Home&Living",
+    "sub_id":7,
+    "sub_Cat": "wallart"
+  },
+ 
+  {
+    "id":6,
+    "category": "Gifts",
+    "sub_id":8,
+    "sub_Cat": "diaries"
+  },
+  {
+    "id":6,
+    "category": "Gifts",
+    "sub_id":9,
+    "sub_Cat": "coasters"
+  }
+]
+)
